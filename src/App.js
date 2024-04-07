@@ -1,9 +1,9 @@
 import './App.css';
-import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
+import Home from './Home';
+import Test from './Test';
 
 function App() {
   return (
@@ -17,8 +17,8 @@ function App() {
     </Navbar>
 
     <Routes>
-      <Route path ='/' element={<div>home page</div>}/>
-      <Route path='test' element={<div>test page</div>}/>
+      <Route path ='/' element={<Home/>}/>
+      <Route path='test' element={<Test/>}/>
     </Routes>
     </BrowserRouter>
   );
