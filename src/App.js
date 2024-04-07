@@ -1,24 +1,27 @@
 import './App.css';
+import Home from './Home';
+import Puns from './Puns';
+
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
-import Home from './Home';
-import Test from './Test';
+import Container from 'react-bootstrap/Container';
+
 
 function App() {
   return (
     <BrowserRouter>
-
-<Navbar expand="lg" className="bg-body-tertiary">
-          <Nav className="me-auto">
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="test">test</Nav.Link>
-          </Nav>
-    </Navbar>
-
+      <Container>
+        <Navbar expand="lg" className="bg-body-tertiary">
+              <Nav className="me-auto">
+                <Nav.Link href="/">Home</Nav.Link>
+                <Nav.Link href="puns">Puns</Nav.Link>
+              </Nav>
+        </Navbar>
+      </Container>
     <Routes>
       <Route path ='/' element={<Home/>}/>
-      <Route path='test' element={<Test/>}/>
+      <Route path='puns' element={<Puns/>}/>
     </Routes>
     </BrowserRouter>
   );

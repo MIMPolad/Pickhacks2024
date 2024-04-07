@@ -1,11 +1,8 @@
 import './App.css';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import { BrowserRouter, Route, Routes} from 'react-router-dom';
 
 function Home() {
   return (
-    <div>THIS IS THE HOME PAGE!</div>
+    <div>Welcome to the security pun website! We hope you get a good chuckle from these silly puns :)</div>
   );
 }
 
